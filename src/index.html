@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Okrašlovací spolek v Holešovicích&ndash;Bubnech</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/mapbox.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script src="js/mapbox.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+<head>
+<body>
+<div class="container">
+    <header style="padding: 10rem 0 2rem;">
+        <h1><b>Okrašlovací spolek</b><br/>v Holešovicích&ndash;Bubnech</h1>
+    </header>
+
+
+    <div class="row">
+        <div class="eight columns">
+            <h3>Účel spolku</h3>
+            <ol>
+                <li>Všeobecné zušlechťování veřejného prostoru na území hl. m. Prahy.</li>
+                <li>Pořádání kulturních a společenských akcí na území hl. m. Prahy.</li>
+                <li>Podpůrné politické aktivity k naplnění účelů v odst. 1. a 2.</li>
+            </ol>
+        </div>
+        <div class="four columns" style="padding-top: 1rem">
+            <p style="text-align: center">
+                <a class="button u-full-width" href="docs/stanovy.pdf">Stanovy</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="map" class="u-max-full-width"></div>
+        <script>
+            var mapID = 'kunesv.b77d27c8';
+            var zoomLevel = $(window).width() < 600 ? 13 : 14;
+
+            L.mapbox.accessToken = 'pk.eyJ1Ijoia3VuZXN2IiwiYSI6ImNpZzc2ejVvMjA1YWp1Zmx2dXh4cXJ3aDUifQ.PZJmmlo0l3WbASj9fu2qnA';
+            var map = L.mapbox.map('map', mapID, {}).setView([50.1044, 14.4355], zoomLevel);
+
+        </script>
+        <p style="margin-top: 1rem; text-align: center">
+            <small>[<b>Ho</b>lešovice &ndash; <b>Bu</b>bny &ndash; <b>Tro</b>ja &ndash; <b>L</b>etná]</small>
+        </p>
+
+    </div>
+
+    <div class="row">
+        <div class="six columns">
+            <h3 style="font-weight: 100">Zápisy ze schůzí</h3>
+            <ul class="date-link-list">
+                <li><span>3. 1. 2014</span> <a
+                        href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_01_2014-01-03.html">První
+                    schůze &ndash; předzakládající</a></li>
+                <li><span>24. 1. 2014</span> <a
+                        href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_02_2014-01-24.html">Druhá
+                    schůze &ndash; ustavující a volební</a></li>
+                <li><span>26. 6. 2014</span> <a
+                        href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_03_2014-06-26.html">Třetí schůze</a>
+                </li>
+            </ul>
+            <ul class="date-link-list">
+                <li><span>12. 4. 2015</span> <a
+                        href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_04_2015-04-12.html">Čtvrtá schůze</a>
+                </li>
+                <li><span>23. 10. 2015</span> <a href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_05_2015-10-23.html">Pátá schůze</a></li>
+            </ul>
+
+        </div>
+        <div class="six columns">
+            <h4>Schůze správní rady</h4>
+            <ul class="date-link-list">
+                <li><span>29. 7. 2014</span> <a
+                        href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_03sr1_2014-07-29.html">Schůze správní
+                    rady (1)</a></li>
+                <li><span>25. 11. 2014</span> <a href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_03sr2_2014-11-25.html">Schůze správní rady (2)</a></li>
+            </ul>
+            <ul class="date-link-list">
+                <li><span>28. 4. 2015</span> <a href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_04sr3_2015-04-28.html">Schůze správní rady (3)</a></li>
+                <li><span>3. 11. 2015</span> <a href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_05sr4_2015-11-03.html">Schůze správní rady (4)</a></li>
+                <li><span>1. 12. 2015</span> <a href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_05sr5_2015-12-01.html">Schůze správní rady (5)</a></li>
+            </ul>
+            <ul class="date-link-list">
+		<li><span>5. 1. 2016</span> <a href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_05sr6_2016-01-05.html">Schůze správní rady (6)</a></li>
+		<li><span>3. 2. 2016</span> <a href="http://www.ms.mff.cuni.cz/~bejce9am/buben/html/zapis_05sr7_2016-02-03.html">Schůze správní rady (7)</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="row" style="border-top: 1px dashed #888; padding: 4rem 2rem; font-size: .9em">
+
+        <div class="six columns">
+            <p>
+                <strong>Okrašlovací spolek</strong> <span
+                    style="white-space: nowrap">v Holešovicích&ndash;Bubnech</span>
+            </p>
+
+            <p>
+                Schnirchova 1084/29<br/>
+                Holešovice<br/>
+                170 00 Praha 7
+            </p>
+
+            <p>
+                IČO: 0298&nbsp;8470</br>
+                Spisová značka: L 60739 vedená u Městského soudu v Praze
+            </p>
+
+        </div>
+        <div class="six columns">
+            <p>Email: <a style="color: #222" href="mailto:spravni-rada@hobutrol.cz">spravni-rada@hobutrol.cz</a></p>
+
+            <p>Pracovní skupina WEB: <a style="color: #222" href="mailto:web-wg@hobutrol.cz">web-wg@hobutrol.cz</a></p>
+        </div>
+
+    </footer>
+</div>
+
+<!-- Piwik -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//analytics.snappy.pro/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 4]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<noscript><p><img src="//analytics.snappy.pro/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+</body>
+</html>
