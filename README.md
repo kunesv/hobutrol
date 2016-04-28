@@ -1,3 +1,3 @@
 # hobutrol
 
-Webpage of 'Okrašlovací spolek v Holešovicích - Bubnech'
+Webpage of society that makes Holesovice & Bubny nicer place.
