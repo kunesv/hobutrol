@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>{{title}} &ndash; Okrašlovací spolek v Holešovicích&ndash;Bubnech</title>
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
 
-<article>
-    <header>
-        <h1>{{title}}</h1>
-        <small>{{date}}</small>
-    </header>
-    {{{contents}}}
-</article>
+<div class="container">
+    <div class="row">
+        <article class="u-max-full-width">
+            <header>
+                <h1>{{title}}</h1>
+                <small>{{date}}</small>
+            </header>
+            {{{contents}}}
+        </article>
+    </div>
+</div>
 
 </body>
 </html>
