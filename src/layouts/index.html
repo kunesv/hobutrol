@@ -2,43 +2,34 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <title>Okrašlovací spolek v Holešovicích&ndash;Bubnech</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/mapbox.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body class="Home">
+<header>
+    <h1><strong>Okrašlovací spolek</strong><br/>v Holešovicích&ndash;Bubnech</h1>
+</header>
 
-    <script src="js/mapbox.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/app.js"></script>
-<head>
-<body>
-<div class="container">
-    <header style="padding: 10rem 0 2rem;">
-        <h1><b>Okrašlovací spolek</b><br/>v Holešovicích&ndash;Bubnech</h1>
-    </header>
-
-
-    <div class="row">
-        <div class="eight columns">
-            <h3>Účel spolku</h3>
+<main>
+    <header>
+        <div>
             <ol>
                 <li>Všeobecné zušlechťování veřejného prostoru na území hl. m. Prahy.</li>
                 <li>Pořádání kulturních a společenských akcí na území hl. m. Prahy.</li>
                 <li>Podpůrné politické aktivity k naplnění účelů v odst. 1. a 2.</li>
             </ol>
         </div>
-        <div class="four columns" style="padding-top: 1rem">
-            <p style="text-align: center">
-                <a class="button u-full-width" href="docs/stanovy.pdf">Stanovy</a>
-            </p>
+        <div>
+            <a class="button" href="/docs/stanovy.pdf">Stanovy</a>
         </div>
-    </div>
+    </header>
 
-    <div class="row">
-        <div id="map" class="u-max-full-width"></div>
+    <section>
+        <!--<div id="map" class="u-max-full-width"></div>
         <script>
             var mapID = 'kunesv.b77d27c8';
             var zoomLevel = $(window).width() < 600 ? 13 : 14;
@@ -49,13 +40,12 @@
         </script>
         <p style="margin-top: 1rem; text-align: center">
             <small>[<b>Ho</b>lešovice &ndash; <b>Bu</b>bny &ndash; <b>Tro</b>ja &ndash; <b>L</b>etná]</small>
-        </p>
+        </p>-->
+    </section>
 
-    </div>
-
-    <div class="row">
-        <div class="six columns">
-            <h3 style="font-weight: 100">Zápisy ze schůzí</h3>
+    <section>
+        <div>
+            <h3>Zápisy ze schůzí</h3>
             <ul class="date-link-list">
                 {{#each schuze}}
                 <li>
@@ -65,7 +55,7 @@
                 {{/each}}
             </ul>
         </div>
-        <div class="six columns">
+        <div>
             <h4>Schůze správní rady</h4>
             <ul class="date-link-list">
                 {{#each spravni}}
@@ -76,36 +66,32 @@
                 {{/each}}
             </ul>
         </div>
+    </section>
+
+
+</main>
+
+<footer>
+    <div>
+        <p>
+            <strong>Okrašlovací spolek</strong> <span>v Holešovicích&ndash;Bubnech</span>
+        </p>
+        <p>
+            Schnirchova 1084/29<br/>
+            Holešovice<br/>
+            170 00 Praha 7
+        </p>
+        <p>
+            IČO: 0298&nbsp;8470</br>
+            Spisová značka: L 60739 vedená u Městského soudu v Praze
+        </p>
     </div>
+    <div>
+        <p>Email: <a href="mailto:spravni-rada@hobutrol.cz">spravni-rada@hobutrol.cz</a></p>
 
-    <footer class="row" style="border-top: 1px dashed #888; padding: 4rem 2rem; font-size: .9em">
-
-        <div class="six columns">
-            <p>
-                <strong>Okrašlovací spolek</strong> <span
-                    style="white-space: nowrap">v Holešovicích&ndash;Bubnech</span>
-            </p>
-
-            <p>
-                Schnirchova 1084/29<br/>
-                Holešovice<br/>
-                170 00 Praha 7
-            </p>
-
-            <p>
-                IČO: 0298&nbsp;8470</br>
-                Spisová značka: L 60739 vedená u Městského soudu v Praze
-            </p>
-
-        </div>
-        <div class="six columns">
-            <p>Email: <a style="color: #222" href="mailto:spravni-rada@hobutrol.cz">spravni-rada@hobutrol.cz</a></p>
-
-            <p>Pracovní skupina WEB: <a style="color: #222" href="mailto:web-wg@hobutrol.cz">web-wg@hobutrol.cz</a></p>
-        </div>
-
-    </footer>
-</div>
+        <p>Pracovní skupina WEB: <a href="mailto:web-wg@hobutrol.cz">web-wg@hobutrol.cz</a></p>
+    </div>
+</footer>
 
 <!-- Piwik -->
 <script type="text/javascript">

@@ -7,24 +7,23 @@
 
     <title>{{title}} &ndash; Okrašlovací spolek v Holešovicích&ndash;Bubnech</title>
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/skeleton.css">
-
     <link rel="stylesheet" href="/css/custom.css">
 </head>
-<body>
+<body class="Zapis">
+<header>
+    <h1><a href="/"><b>Okrašlovací spolek</b><br/>v Holešovicích&ndash;Bubnech</a></h1>
+</header>
+<main>
+    <article class="u-max-full-width">
+        <header>
+            <h1>{{title}}</h1>
+            <small>{{date}}</small>
+        </header>
 
-<div class="container">
-    <div class="row">
-        <article class="u-max-full-width">
-            <header>
-                <h1>{{title}}</h1>
-                <small>{{date}}</small>
-            </header>
-            {{{contents}}}
-        </article>
-    </div>
-</div>
+        {{{contents}}}
+
+    </article>
+</main>
 
 </body>
 </html>

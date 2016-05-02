@@ -1,0 +1,145 @@
+$module: 1.618rem;
+
+$color-link: #39A6D6;
+$color-secondary: #6A6A6D;
+
+body {
+  background: #F2F3EF;
+  color: #393939;
+
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+
+  line-height: $module;
+
+  margin: 0;
+  padding: 0 $module;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 2 * $module 0;
+
+  & > div {
+    flex: 1 0 15rem;
+
+    margin: .5 * $module;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+p {
+  margin: 0 0 $module;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $color-secondary;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 2 * $module;
+  margin: 0 0 $module;
+
+  strong {
+    font-weight: bold;
+  }
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: .6 * $module;
+}
+
+a {
+  color: $color-link;
+
+
+  &.button {
+    background: $color-link;
+    color: white;
+
+    display: inline-block;
+    line-height: 1.5 * $module;
+    min-width: 3.5 * $module;
+    padding: 0 2 * $module;
+
+    text-align: center;
+    text-decoration: none;
+
+
+  }
+}
+
+body > header, body > main, body > footer {
+  margin: 0 auto;
+  max-width: 40 * $module;
+}
+
+main > header {
+  @extend section;
+
+  color: $color-secondary;
+
+  border-top: 1px solid #ccc;
+  padding-top: $module;
+
+}
+
+body > footer {
+  @extend section;
+
+  border-top: 1px solid #ccc;
+
+  color: $color-secondary;
+  font-size: .9rem;
+  padding-top: 2 * $module;
+}
+
+.Home > header {
+  padding: 2 * $module 0 0;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 3 * $module;
+  }
+}
+
+.date-link-list {
+
+  span {
+    display: inline-block;
+    min-width: 3.5 * $module;
+    padding-right: .5 * $module;
+    text-align: right;
+  }
+}
+
+.Zapis > header {
+  padding: $module 0;
+  h1 {
+    font-size: 1.5rem;
+
+    a {
+      //color: $color-secondary;
+      text-decoration: none;
+    }
+  }
+}
+
+.Zapis article > header {
+  padding: 2rem 0;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3 * $module;
+  }
+}
