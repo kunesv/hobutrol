@@ -60,21 +60,26 @@ body > h1 {
   align-items: center;
   height: 6.4rem;
   margin: 0;
-}
 
-body > h1 > a {
-  flex: 0 0 80px;
-}
-body > h1 > span {
-  flex: 0 1 12rem;
-  padding: 0 .8rem;
-
-  &:first-child {
-    text-align: right;
+  > a {
+    flex: 0 0 80px;
   }
 
-  &:last-child {
-    text-align: left;
+  img {
+    display: block;
+  }
+
+  > span {
+    flex: 0 1 12rem;
+    padding: 0 .8rem;
+
+    &:first-child {
+      text-align: right;
+    }
+
+    &:last-child {
+      text-align: left;
+    }
   }
 }
 
