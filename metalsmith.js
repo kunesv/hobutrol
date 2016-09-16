@@ -45,7 +45,13 @@ Metalsmith(__dirname)
         host: '0.0.0.0',
         port: process.env.PORT || 5000
     }))
-    .use(watch())
+    .use(watch(
+        {paths: {
+            "${source}/**/*": true, // every changed files will trigger a rebuild of themselves
+            "${source}/layouts/**/*": "**/*", // every templates changed will trigger a rebuild of all files
+            "${source}/scss/**/*": "**/*", // every sass changed will trigger a rebuild of all sass files
+        }}
+    ))
     .build(function (err) {
         if (err) throw err;
     });

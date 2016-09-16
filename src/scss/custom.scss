@@ -62,8 +62,12 @@ body > h1 {
   margin: 0;
 }
 
+body > h1 > a {
+  flex: 0 0 80px;
+}
 body > h1 > span {
-
+  flex: 0 1 9rem;
+  padding: 0 .8rem;
 }
 
 body > header {
@@ -74,7 +78,8 @@ body > header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 16rem;
+
+  padding: 4rem 0;
 }
 
 body > header > ol {
@@ -83,13 +88,15 @@ body > header > ol {
   flex-wrap: wrap;
 
   list-style: none;
-  margin: 0 0 2.4rem;
+  margin: 0 0 2rem;
   padding: 0;
+
+  max-width: 100%;
 }
 
-body > header li {
+body > header > ol > li {
   flex: 0 1 12.8rem;
-  margin: 0 1.6rem;
+  margin: 0 1.6rem .4rem;
   line-height: 1.4rem;
   position: relative;
 }
