@@ -66,8 +66,16 @@ body > h1 > a {
   flex: 0 0 80px;
 }
 body > h1 > span {
-  flex: 0 1 9rem;
+  flex: 0 1 12rem;
   padding: 0 .8rem;
+
+  &:first-child {
+    text-align: right;
+  }
+
+  &:last-child {
+    text-align: left;
+  }
 }
 
 body > header {
