@@ -1,145 +1,179 @@
-$module: 1.618rem;
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-$color-link: #39A6D6;
-$color-secondary: #6A6A6D;
+a:link {
+  color: #0F4D69;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #222;
+}
+
+a.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0 none;
+  border-radius: .175rem;
+  box-shadow: inset 0 0 .8rem rgba(100, 0, 0, .15);
+  background: #E06E63;
+  color: #ffe0ef;
+  height: 2.4rem;
+  width: 16rem;
+
+  &:link, &:visited {
+    color: #ffe0ef;
+  }
+
+  > span {
+    font-size: 9px;
+  }
+}
+
 
 body {
-  background: #F2F3EF;
-  color: #393939;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.6rem;
 
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  background-color: white;
+  color: #232F3D;
 
-  line-height: $module;
-
-  margin: 0;
-  padding: 0 $module;
+  display: flex;
+  flex-direction: column;
 }
 
-section {
+body > h1 {
+  background-color: #232F3D;
+  color: #f0ffff;
+  font-weight: 400;
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.4rem;
+  margin: 0;
+}
+
+body > h1 > span {
+
+}
+
+body > header {
+  background-color: #F2F6F7;
+  color: #232F3D;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 16rem;
+}
+
+body > header > ol {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 
-  margin: 2 * $module 0;
-
-  & > div {
-    flex: 1 0 15rem;
-
-    margin: .5 * $module;
-
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+  list-style: none;
+  margin: 0 0 2.4rem;
+  padding: 0;
 }
 
-p {
-  margin: 0 0 $module;
+body > header li {
+  flex: 0 1 12.8rem;
+  margin: 0 1.6rem;
+  line-height: 1.4rem;
+  position: relative;
 }
 
-h1, h2, h3, h4, h5 {
-  color: $color-secondary;
-  font-size: 1.6rem;
-  font-weight: normal;
-  line-height: 2 * $module;
-  margin: 0 0 $module;
-
-  strong {
-    font-weight: bold;
-  }
+body > header li > span {
+  position: absolute;
+  left: -1.2rem;
+  font-weight: 600;
 }
 
-ul, ol {
+body > header > p {
   margin: 0;
-  padding-left: .6 * $module;
+  padding: 0;
 }
 
-a {
-  color: $color-link;
+body > main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
+  padding: 3.2rem;
+}
 
-  &.button {
-    background: $color-link;
-    color: white;
+body > main > section {
+  flex: 0 1 28.8rem;
+  margin-right: 1px;
+  padding-bottom: 1.6rem;
+}
 
-    display: inline-block;
-    line-height: 1.5 * $module;
-    min-width: 3.5 * $module;
-    padding: 0 2 * $module;
-
-    text-align: center;
-    text-decoration: none;
-
-
+@media (min-width: 66rem) {
+  body > main > section:first-child {
+    border-right: 1px solid #e0e0e0;
   }
 }
 
-body > header, body > main, body > footer {
-  margin: 0 auto;
-  max-width: 40 * $module;
+body > main > section > header {
+  display: flex;
+  color: #887774;
+  height: 4.8rem;
+
+  justify-content: center;
+  align-items: center;
 }
 
-main > header {
-  @extend section;
+body > main > section > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 2.4rem;
+}
 
-  color: $color-secondary;
+body > main > section > ul li a {
+  display: flex;
+}
 
-  border-top: 1px solid #ccc;
-  padding-top: $module;
-
+body > main > section > ul li span {
+  flex: 0 0 5.6rem;
+  padding-right: .8rem;
+  text-align: right;
+  font-weight: 600;
 }
 
 body > footer {
-  @extend section;
+  display: flex;
+  justify-content: center;
 
-  border-top: 1px solid #ccc;
+  flex-wrap: wrap;
+  height: 24rem;
 
-  color: $color-secondary;
-  font-size: .9rem;
-  padding-top: 2 * $module;
+  color: #887774;
 }
 
-.Home > header {
-  padding: 2 * $module 0 0;
+body > footer > section {
+  flex: 0 1 24rem;
+  margin-top: 1.6rem;
 
-  h1 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    line-height: 3 * $module;
-  }
 }
 
-.date-link-list {
-
-  span {
-    display: inline-block;
-    min-width: 3.5 * $module;
-    padding-right: .5 * $module;
-    text-align: right;
-  }
+body > footer > section header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.2rem;
 }
 
-.Zapis > header {
-  padding: $module 0;
-  h1 {
-    font-size: 1.5rem;
-
-    a {
-      //color: $color-secondary;
-      text-decoration: none;
-    }
-  }
-}
-
-.Zapis article > header {
-  padding: 2rem 0;
-
-  h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 3 * $module;
-  }
+body > footer > section p {
+  margin: .8rem 1.6rem;
 }
