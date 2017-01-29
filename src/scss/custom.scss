@@ -1,6 +1,43 @@
+$module: 1.614rem;
+
 html, body {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.614rem;
+
+  background-color: #f6f5ee;
+  color: #241f1c;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0;
+}
+
+body > h1 {
+  color: #6c5d53;
+  font-weight: 400;
+  font-size: 16px;
+
+  text-align: center;
+
+  > a {
+    display: inline-block;
+    margin-top: 2 * $module;
+  }
+
+  > span {
+    display: block;
+    line-height: 0.75 * $module;
+    margin: 0.75 * $module 0 1.5 * $module;
+  }
 }
 
 a:link {
@@ -34,58 +71,10 @@ a.button {
   }
 }
 
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.6rem;
-
-  background-color: white;
-  color: #232F3D;
-
-  display: flex;
-  flex-direction: column;
-}
-
-body > h1 {
-  background-color: #232F3D;
-  color: #f0ffff;
-  font-weight: 400;
-  font-size: 13px;
-  font-style: italic;
-  text-align: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 6.4rem;
-  margin: 0;
-
-  > a {
-    flex: 0 0 80px;
-  }
-
-  img {
-    display: block;
-  }
-
-  > span {
-    flex: 0 1 12rem;
-    padding: 0 .8rem;
-
-    &:first-child {
-      text-align: right;
-    }
-
-    &:last-child {
-      text-align: left;
-    }
-  }
-}
-
 body > header {
-  background-color: #F2F6F7;
-  color: #232F3D;
+  background-color: white;
+  max-width: 960px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
@@ -126,6 +115,10 @@ body > header > p {
 }
 
 body > main {
+  background-color: white;
+  max-width: 960px;
+  margin: 0 auto;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

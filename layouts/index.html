@@ -11,9 +11,8 @@
 </head>
 <body>
 <h1>
-    <span>Okrašlovací spolek</span>
-    <a style="color:white" href="/"><img src="/images/logo.png"/></a>
-    <span>v Holešovicích&ndash;Bubnech</span>
+    <a style="color:white" href="/"><img src="/images/logo.svg"/></a>
+    <span>Okrašlovací spolek<br/>v Holešovicích&ndash;Bubnech</span>
 </h1>
 <header>
     <ol>
@@ -29,7 +28,7 @@
     <section>
         <header>Zápisy ze schůzí</header>
         <ul>
-            {{#each schuze}}
+            {{#each meetingRecords}}
             <li>
                 <a href="{{path}}"><span>{{date}}</span> {{title}}</a>
             </li>
@@ -39,7 +38,7 @@
     <section>
         <header>Schůze správní rady</header>
         <ul>
-            {{#each spravni}}
+            {{#each boardRecords}}
             <li>
                 <a href="{{path}}"><span>{{date}}</span> {{title}}</a>
             </li>

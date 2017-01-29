@@ -9,19 +9,26 @@ var serve = require('metalsmith-serve');
 var watch = require('metalsmith-watch');
 
 Metalsmith(__dirname)
+    .source('./src')
+    .destination('./build')
+    .clean(true)
     .use(collections({
-        schuze: {
-            pattern: 'zapisy/schuze/**/*.*',
+        // "meetingRecordsLatest": {
+        //     pattern: 'zapisy/schuze/**/*.*',
+        //     sortBy: 'date',
+        //     reverse: true,
+        //     limit: 4
+        // },
+        "meetingRecords": {
+            pattern: 'zapisy/schuze/**/*.md',
             sortBy: 'date'
         },
-        spravni: {
-            pattern: 'zapisy/spravni_rada/**/*.*',
+        "boardRecords": {
+            pattern: 'zapisy/spravni_rada/**/*.md',
             sortBy: 'date'
         }
     }))
-    .use(markdown({
-        gfm: true
-    }))
+    .use(markdown())
     .use(permalinks(
         {
             pattern: ':path:date',
@@ -35,8 +42,7 @@ Metalsmith(__dirname)
         }]
     }))
     .use(layouts({
-        engine: 'handlebars',
-        directory: 'src/layouts'
+        engine: 'handlebars'
     }))
     .use(sass({
         outputDir: 'css/'
@@ -46,11 +52,13 @@ Metalsmith(__dirname)
         port: process.env.PORT || 5000
     }))
     .use(watch(
-        {paths: {
-            "${source}/**/*": true, // every changed files will trigger a rebuild of themselves
-            "${source}/layouts/**/*": "**/*", // every templates changed will trigger a rebuild of all files
-            "${source}/scss/**/*": "**/*", // every sass changed will trigger a rebuild of all sass files
-        }}
+        {
+            paths: {
+                "${source}/**/*": true, // every changed files will trigger a rebuild of themselves
+                "layouts/**/*": "**/*", // every templates changed will trigger a rebuild of all files
+                "${source}/scss/**/*": "**/*" // every sass changed will trigger a rebuild of all files
+            }
+        }
     ))
     .build(function (err) {
         if (err) throw err;
