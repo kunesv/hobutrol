@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        id="svg4906"
+        viewBox="0 0 39 50.000001"
+        height="50"
+        width="39">
+    <defs
+            id="defs4908"/>
+    <metadata
+            id="metadata4911">
+        <rdf:RDF>
+            <cc:Work
+                    rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                        rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title></dc:title>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g
+            transform="translate(0,-1002.3622)"
+            id="layer1">
+        <g
+                transform="translate(-529.45275,545)"
+                id="g4552">
+            <path
+                    style="fill:none;fill-rule:evenodd;stroke:#aa0000;stroke-width:1.20000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                    d="M 549,460.36219 532.125,482.83815 549,505.31411 565.875,482.83815 Z"
+                    id="path4223-8"/>
+            <g
+                    id="g4437-9"
+                    transform="translate(233.36244,338.35355)"
+                    style="fill:#aa0000">
+                <text
+           id="text4153-8-4-50"
+           y="144.45644"
+           x="308.84888"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="144.45644"
+             x="308.84888"
+             id="tspan4155-4-4-6">S</tspan></text>
+        <text
+           id="text4153-8-4-5-0"
+           y="153.0511"
+           x="312.38657"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="153.0511"
+             x="312.38657"
+             id="tspan4155-4-4-0-8">R</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>

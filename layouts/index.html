@@ -7,40 +7,48 @@
 
     <title>Okrašlovací spolek v Holešovicích&ndash;Bubnech</title>
 
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-<h1>
-    <a style="color:white" href="/"><img src="/images/logo.svg"/></a>
-    <span>Okrašlovací spolek<br/>v Holešovicích&ndash;Bubnech</span>
-</h1>
 <header>
-    <ol>
-        <li><span>1.</span> Všeobecné zušlechťování veřejného prostoru na území hl. m. Prahy.</li>
-        <li><span>2.</span> Pořádání kulturních a společenských akcí na území hl. m. Prahy.</li>
-        <li><span>3.</span> Podpůrné politické aktivity k naplnění účelů v odst. 1. a 2.</li>
-    </ol>
-    <p>
-        <a class="button" href="/docs/stanovy.pdf">Stanovy <span>[.PDF]</span></a>
-    </p>
+    <h1>
+        <a href="/">
+            <img src="/images/logo.svg"/>
+            <span>Okrašlovací spolek<br/>v Holešovicích&ndash;Bubnech</span>
+        </a>
+    </h1>
+
+    <section>
+        <h2>Účel spolku</h2>
+        <ol>
+            <li>Všeobecné zušlechťování veřejného prostoru na území hl. m. Prahy.</li>
+            <li>Pořádání kulturních a společenských akcí na území hl. m. Prahy.</li>
+            <li>Podpůrné politické aktivity k naplnění účelů v odst. 1. a 2.</li>
+        </ol>
+        <p>
+            <a href="#">Více o spolku</a>
+        </p>
+        <p>
+            <a class="button" href="/docs/stanovy.pdf">Stanovy</a>
+        </p>
+    </section>
 </header>
 <main>
+    <header>
+        <h2>Zápisy</h2>
+    </header>
     <section>
-        <header>Zápisy ze schůzí</header>
         <ul>
             {{#each meetingRecords}}
             <li>
-                <a href="{{path}}"><span>{{date}}</span> {{title}}</a>
+                <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{title}}</span></a>
             </li>
             {{/each}}
         </ul>
-    </section>
-    <section>
-        <header>Schůze správní rady</header>
-        <ul>
+        <ul class="boardRecords">
             {{#each boardRecords}}
             <li>
-                <a href="{{path}}"><span>{{date}}</span> {{title}}</a>
+                <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{title}}</span></a>
             </li>
             {{/each}}
         </ul>
@@ -48,21 +56,24 @@
 </main>
 <footer>
     <section>
-        <header>
-            Okrašlovací spolek v Holešovicích–Bubnech
-        </header>
-        <p>
-            Schnirchova 1084/29<br>
-            Holešovice<br>
-            170 00 Praha 7
-        </p>
-        <p>
-            IČO: 0298&nbsp;8470<br>
-            Spisová značka: L 60739 vedená u Městského soudu v Praze
-        </p>
-
-        <p>Email: <a href="mailto:spravni-rada@hobutrol.cz">spravni-rada@hobutrol.cz</a><br/>
-            Pracovní skupina Web: <a href="mailto:web-wg@hobutrol.cz">web-wg@hobutrol.cz</a></p>
+        <div>
+            <header>
+                Okrašlovací spolek v Holešovicích–Bubnech
+            </header>
+            <p>
+                Schnirchova 1084/29<br>
+                Holešovice<br>
+                170 00 Praha 7
+            </p>
+            <p>
+                IČO: 0298&nbsp;8470<br>
+                Spisová značka: L 60739 vedená u Městského soudu v Praze
+            </p>
+        </div>
+        <div>
+            <p>Email: <a href="mailto:spravni-rada@hobutrol.cz">spravni-rada@hobutrol.cz</a></p>
+            <p>Pracovní skupina Web: <a href="mailto:web-wg@hobutrol.cz">web-wg@hobutrol.cz</a></p>
+        </div>
     </section>
 </footer>
 
