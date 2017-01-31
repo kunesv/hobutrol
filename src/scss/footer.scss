@@ -1,0 +1,25 @@
+@import "common";
+
+body > footer {
+  max-width: $max-page-width;
+  margin: 0 auto;
+
+  color: #40403e;
+  font-size: 14px;
+
+  > section {
+    padding: 1.5 * $module;
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  div {
+    flex: 300px;
+
+    &:first-child p {
+
+    }
+  }
+}
