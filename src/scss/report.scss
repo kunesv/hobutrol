@@ -25,6 +25,10 @@ body > main {
     > ol > li {
       margin-top: $module;
     }
+
+    > p:last-child {
+      display: none;
+    }
   }
 }
 
