@@ -1,5 +1,5 @@
 $module: 1.614rem;
-$text-color: #241f1c;
+$text-color: #201f1e;
 $link-color: #0F4D69;
 
 html, body {
@@ -11,7 +11,7 @@ html, body {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.614rem;
-  background-color: #f6f5ee;
+  background-color: #f6f5f2;
   color: $text-color;
 }
 
@@ -21,7 +21,6 @@ a {
 
 h1 {
   margin: 0;
-  color: #6c5d53;
   font-weight: 400;
   font-size: 19px;
 }
@@ -47,7 +46,7 @@ body > header {
     padding: 1.5 * $module 0 $module;
 
     a {
-      color: #6c5d53;
+      color: #6c6360;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -138,7 +137,7 @@ body > footer {
   max-width: 960px;
   margin: 0 auto;
 
-  color: #483e37;
+  color: #403f3e;
   font-size: 14px;
 
   > section {
