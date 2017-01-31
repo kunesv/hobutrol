@@ -30,6 +30,12 @@ body > main {
       display: none;
     }
   }
+
+  > footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5 * $module;
+  }
 }
 
 li > p > strong:first-child {
