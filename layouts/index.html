@@ -7,7 +7,8 @@
 
     <title>Okrašlovací spolek v Holešovicích&ndash;Bubnech</title>
 
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="stylesheet" href="/css/home.css"/>
 </head>
 <body>
 <header>
@@ -42,7 +43,7 @@
             <ul>
                 {{#each meetingRecords}}
                 <li>
-                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{title}}</span></a>
+                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
                 </li>
                 {{/each}}
             </ul>
@@ -54,7 +55,7 @@
             <ul>
                 {{#each boardRecords}}
                 <li>
-                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{title}}</span></a>
+                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
                 </li>
                 {{/each}}
             </ul>

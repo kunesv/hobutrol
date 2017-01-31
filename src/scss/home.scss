@@ -1,88 +1,4 @@
-$module: 1.614rem;
-$text-color: #20201e;
-$link-color: #0F4D69;
-
-$max-page-width: 980px;
-
-html, body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.614rem;
-  background-color: #f6f6f2;
-  color: $text-color;
-}
-
-a {
-  color: $link-color;
-}
-
-h1 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 19px;
-}
-
-h2 {
-  color: $text-color;
-  font-size: 25px;
-  font-weight: 400;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-body > header {
-  max-width: $max-page-width;
-  margin: 0 auto;
-
-  > h1 {
-    display: flex;
-    justify-content: center;
-    padding: 1.5 * $module 0 $module;
-
-    a {
-      color: #6c6c63;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      line-height: 0.9 * $module;
-      text-decoration: none;
-    }
-    img {
-      display: block;
-      height: 3 * $module;
-      width: 3 * $module;
-    }
-    span {
-      display: block;
-      margin-top: 0.75 * $module;
-      text-align: center;
-    }
-  }
-
-  > section {
-    background-color: white;
-    padding: 1.5 * $module;
-
-    h2 {
-      margin-bottom: $module;
-    }
-
-    ol {
-      margin: 0;
-      list-style-position: inside;
-      padding: 0;
-    }
-  }
-}
+@import "common";
 
 body > main {
   background-color: white;
@@ -125,6 +41,7 @@ body > main {
       a {
         display: flex;
         text-decoration: none;
+        flex-wrap: wrap;
       }
 
       span:first-child {

@@ -1,0 +1,37 @@
+@import "common";
+
+body > main {
+  background-color: white;
+  max-width: $max-page-width;
+  margin: 0 auto;
+
+  > section {
+    padding: 1.5 * $module;
+
+    h1 {
+      font-weight: 400;
+      font-size: 25px;
+
+    }
+
+    h2 {
+      font-size: 19px;
+    }
+
+    > h1 + p, > h2 + p {
+      margin-top: $module;
+    }
+
+    > ol > li {
+      margin-top: $module;
+    }
+  }
+}
+
+li > p > strong:first-child {
+  font-size: 20px;
+  font-weight: 400;
+
+  display: block;
+
+}
