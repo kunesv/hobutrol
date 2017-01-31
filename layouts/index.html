@@ -38,20 +38,27 @@
         <h2>Zápisy</h2>
     </header>
     <section>
-        <ul>
-            {{#each meetingRecords}}
-            <li>
-                <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{title}}</span></a>
-            </li>
-            {{/each}}
-        </ul>
-        <ul class="boardRecords">
-            {{#each boardRecords}}
-            <li>
-                <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{title}}</span></a>
-            </li>
-            {{/each}}
-        </ul>
+        <div>
+            <ul>
+                {{#each meetingRecords}}
+                <li>
+                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{title}}</span></a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div>
+            <h3>
+                <img src="/images/spravni_rada.svg"/>
+            </h3>
+            <ul>
+                {{#each boardRecords}}
+                <li>
+                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{title}}</span></a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
     </section>
 </main>
 <footer>

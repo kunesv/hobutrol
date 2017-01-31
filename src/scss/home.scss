@@ -1,6 +1,8 @@
 $module: 1.614rem;
-$text-color: #201f1e;
+$text-color: #20201e;
 $link-color: #0F4D69;
+
+$max-page-width: 980px;
 
 html, body {
   margin: 0;
@@ -11,7 +13,7 @@ html, body {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.614rem;
-  background-color: #f6f5f2;
+  background-color: #f6f6f2;
   color: $text-color;
 }
 
@@ -37,7 +39,7 @@ p {
 }
 
 body > header {
-  max-width: 960px;
+  max-width: $max-page-width;
   margin: 0 auto;
 
   > h1 {
@@ -46,7 +48,7 @@ body > header {
     padding: 1.5 * $module 0 $module;
 
     a {
-      color: #6c6360;
+      color: #6c6c63;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -84,7 +86,7 @@ body > header {
 
 body > main {
   background-color: white;
-  max-width: 960px;
+  max-width: $max-page-width;
   margin: 0 auto;
 
   > header {
@@ -97,19 +99,28 @@ body > main {
 
     padding: 0 1.5 * $module 1.5 * $module;
 
-    ul {
+    div {
       flex: 300px;
+    }
 
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 4 * $module;
+      margin: 0;
+
+      img {
+        height: 2.5 * $module;
+        width: 2.5 * $module;
+      }
+    }
+
+    ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-
-      &.boardRecords {
-        background-image: url('/images/spravni_rada.svg');
-        background-repeat: no-repeat;
-        background-position: center .5 * $module;
-        padding-top: 3 * $module;
-      }
 
       a {
         display: flex;
@@ -134,10 +145,10 @@ body > main {
 }
 
 body > footer {
-  max-width: 960px;
+  max-width: $max-page-width;
   margin: 0 auto;
 
-  color: #403f3e;
+  color: #40403e;
   font-size: 14px;
 
   > section {
