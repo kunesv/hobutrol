@@ -1,6 +1,5 @@
 var Metalsmith = require('metalsmith');
 var collections = require('metalsmith-collections');
-var markdown = require('metalsmith-markdown');
 var permalinks = require('metalsmith-permalinks');
 var dateFormatter = require('metalsmith-date-formatter');
 var layouts = require('metalsmith-layouts');
@@ -11,13 +10,14 @@ var dateInFilename = require('metalsmith-date-in-filename');
 var inspect = require('metalsmith-inspect');
 var title = require('metalsmith-title');
 var keymaster = require('metalsmith-keymaster');
+var markdownRemarkable = require('metalsmith-markdown-remarkable');
 
 Metalsmith(__dirname)
     .source('./src')
     .destination('./build')
     .clean(true)
     .use(dateInFilename(false))
-    .use(markdown())
+    .use(markdownRemarkable('full'))
     .use(title())
     .use(keymaster({
         from: function (data) {
