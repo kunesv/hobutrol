@@ -9,7 +9,7 @@ body > main {
     padding: 1.5 * $module;
 
     h1 {
-      font-weight: 400;
+      font-weight: 600;
       font-size: 25px;
 
     }
@@ -24,6 +24,19 @@ body > main {
 
     > ol > li {
       margin-top: $module;
+
+      font-size: 19px;
+
+      > p > strong:first-child, > strong:first-child {
+        font-size: 19px;
+
+        display: inline-block;
+        margin-bottom: .125 * $module;
+      }
+
+      > * {
+        font-size: $base-font-size;
+      }
     }
 
     > p:last-child {
@@ -38,10 +51,3 @@ body > main {
   }
 }
 
-li > p > strong:first-child {
-  font-size: 20px;
-  font-weight: 400;
-
-  display: block;
-
-}
