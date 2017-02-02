@@ -55,7 +55,7 @@ Metalsmith(__dirname)
     }))
     .use(layouts({
         engine: 'handlebars',
-        default: 'zapis.html',
+        default: 'report.html',
         pattern: "**/*.html"
     }))
     .use(sass({

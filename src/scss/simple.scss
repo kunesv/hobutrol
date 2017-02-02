@@ -1,0 +1,36 @@
+@import "common";
+
+body > main {
+  background-color: white;
+  max-width: $max-page-width;
+  margin: 0 auto;
+
+  > section {
+    padding: 1.5 * $module;
+
+    h1 {
+      font-weight: 600;
+      font-size: 25px;
+
+    }
+
+    h2 {
+      font-size: 19px;
+    }
+
+    p {
+      margin-bottom: .5 * $module;
+    }
+
+    > h1 + p, > h2 + p {
+      margin-top: $module;
+    }
+  }
+
+  > footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5 * $module;
+  }
+}
+

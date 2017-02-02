@@ -1,17 +1,17 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Okrašlovací spolek v Holešovicích&ndash;Bubnech</title>
+    <title>{{title}} &ndash; Okrašlovací spolek v Holešovicích&ndash;Bubnech</title>
 
-    <link rel="stylesheet" href="/css/header.css"/>
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css"/>
-    <link rel="stylesheet" href="/css/home.css"/>
+    <link rel="stylesheet" href="/css/simple.css">
 </head>
-<body>
+<body class="Zapis">
 <header>
     <h1>
         <a href="/">
@@ -19,50 +19,13 @@
             <span>Okrašlovací spolek<br/>v Holešovicích&ndash;Bubnech</span>
         </a>
     </h1>
-
-    <section>
-        <h2>Účel spolku</h2>
-        <ol>
-            <li>Všeobecné zušlechťování veřejného prostoru na území hl. m. Prahy.</li>
-            <li>Pořádání kulturních a společenských akcí na území hl. m. Prahy.</li>
-            <li>Podpůrné politické aktivity k naplnění účelů v odst. 1. a 2.</li>
-        </ol>
-        <p>
-            <a href="/about">Více o spolku</a>
-        </p>
-        <p>
-            <a class="button" href="/docs/stanovy.pdf">Stanovy</a>
-        </p>
-    </section>
 </header>
 <main>
-    <header>
-        <h2>Zápisy</h2>
-    </header>
     <section>
-        <div>
-            <ul>
-                {{#each meetingRecords}}
-                <li>
-                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
-                </li>
-                {{/each}}
-            </ul>
-        </div>
-        <div>
-            <h3>
-                <img src="/images/spravni_rada.svg"/>
-            </h3>
-            <ul>
-                {{#each boardRecords}}
-                <li>
-                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
-                </li>
-                {{/each}}
-            </ul>
-        </div>
+        {{{contents}}}
     </section>
 </main>
+
 <footer>
     <section>
         <div>
