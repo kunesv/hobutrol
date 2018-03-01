@@ -24,10 +24,14 @@ h1 {
 }
 
 h2 {
+  background-color: rgba(0,0,0,.1);
   color: $text-color;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 1.5 * $module;
+
+  padding: 0.5 * $module;
 }
 
 p {
@@ -54,8 +58,8 @@ body > header {
     }
     img {
       display: block;
-      height: 3 * $module;
-      width: 3 * $module;
+      height: 5.5 * $module;
+      width: 5.5 * $module;
     }
     span {
       display: block;

@@ -7,60 +7,62 @@
 
     <title>Okrašlovací spolek v Holešovicích&ndash;Bubnech</title>
 
-    <link rel="stylesheet" href="/css/header.css"/>
-    <link rel="stylesheet" href="/css/footer.css"/>
     <link rel="stylesheet" href="/css/home.css"/>
 </head>
 <body>
 <header>
-    <h1>
-        <a href="/">
-            <img src="/images/logo.svg"/>
-            <span>Okrašlovací spolek<br/>v Holešovicích&ndash;Bubnech</span>
-        </a>
-    </h1>
-
-    <section>
-        <h2>Účel spolku</h2>
-        <ol>
-            <li>Všeobecné zušlechťování veřejného prostoru na území hl. m. Prahy.</li>
-            <li>Pořádání kulturních a společenských akcí na území hl. m. Prahy.</li>
-            <li>Podpůrné politické aktivity k naplnění účelů v odst. 1. a 2.</li>
-        </ol>
-        <p>
-            <a href="/about">Více o spolku</a>
-        </p>
-        <p>
-            <a class="button" href="/docs/stanovy.pdf">Stanovy</a>
-        </p>
-    </section>
+    <a href="/"><img src="/images/hobutrol-logo.png "/></a>
 </header>
 <main>
-    <header>
-        <h2>Zápisy</h2>
-    </header>
+    <aside>
+        <section class="ucel">
+            <header>Účel spolku</header>
+            <div>
+                <ol>
+                    <li>Všeobecné zušlechťování veřejného prostoru na území hl. m. Prahy.</li>
+                    <li>Pořádání kulturních a společenských akcí na území hl. m. Prahy.</li>
+                    <li>Podpůrné politické aktivity k naplnění účelů v odst. 1. a 2.</li>
+                </ol>
+                <p>
+                    <a class="button" href="/docs/stanovy.pdf">Stanovy</a>
+                </p>
+            </div>
+        </section>
+        <section class="about">
+            <header>O spolku</header>
+            <div>
+                <p>Okrašlovací spolek v Holešovicích-Bubnech usiluje o zlepšení prostředí kolem nás.</p>
+                <p>Na počátku stála sdílená nepohoda z přístupu některých chovatelů psů k provozování jejich koníčka. Špína v ulicích se nám zdála již více nesnesitelnou.</p>
+                <p>Dosud jsme byli pasivní jako vy ostatní – ale něco se v nás zlomilo a řekli jsme si, že s tím něco uděláme společně.</p>
+                <p>Na nosnou základní linii spolkového života se brzy nabalilo mnoho dalších aktivit, třeba tradiční jarní závod Otvírání studánek, komunitní schůzování či podpora dalších prospěšných místních aktivit.</p>
+            </div>
+        </section>
+    </aside>
     <section>
-        <div>
-            <ul>
-                {{#each meetingRecords}}
-                <li>
-                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
-                </li>
-                {{/each}}
-            </ul>
-        </div>
-        <div>
-            <h3>
-                <img src="/images/spravni_rada.svg"/>
-            </h3>
-            <ul>
-                {{#each boardRecords}}
-                <li>
-                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
-                </li>
-                {{/each}}
-            </ul>
-        </div>
+        <header>Zápisy</header>
+        <main>
+            <div>
+                <ul>
+                    {{#each meetingRecords}}
+                    <li>
+                        <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div>
+                <h3>
+                    <img src="/images/spravni_rada.svg"/>
+                </h3>
+                <ul>
+                    {{#each boardRecords}}
+                    <li>
+                        <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </main>
     </section>
 </main>
 <footer>
@@ -85,26 +87,6 @@
         </div>
     </section>
 </footer>
-
-<!-- Piwik -->
-<script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function () {
-        var u = "//analytics.sprinters.cz/";
-        _paq.push(['setTrackerUrl', u + 'piwik.php']);
-        _paq.push(['setSiteId', 4]);
-        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-        g.type = 'text/javascript';
-        g.async = true;
-        g.defer = true;
-        g.src = u + 'piwik.js';
-        s.parentNode.insertBefore(g, s);
-    })();
-</script>
-<noscript><p><img src="//analytics.sprinters.cz/piwik.php?idsite=4" style="border:0;" alt=""/></p></noscript>
-<!-- End Piwik Code -->
 
 </body>
 </html>

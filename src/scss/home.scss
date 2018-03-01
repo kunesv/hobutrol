@@ -1,86 +1,80 @@
-@import "common";
+$module: 1.618rem;
 
-body > main {
-  background-color: white;
-  max-width: $max-page-width;
-  margin: 0 auto;
-
-  > header {
-    padding: 1.5 * $module 1.5 * $module $module;
-  }
-
-  > section {
-    display: flex;
-    flex-wrap: wrap;
-
-    padding: 0 1.5 * $module 1.5 * $module;
-
-    div {
-      flex: 300px;
-    }
-
-    h3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      height: 4 * $module;
-      margin: 0;
-
-      img {
-        height: 2.5 * $module;
-        width: 2.5 * $module;
-      }
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-
-      a {
-        display: flex;
-        text-decoration: none;
-        flex-wrap: wrap;
-      }
-
-      span:first-child {
-        flex: 0 1 5 * $module;
-
-        color: $text-color;
-        padding-right: .5 * $module;
-        text-align: right;
-
-      }
-
-      span:last-child {
-        flex: 8 * $module;
-        text-decoration: underline;
-      }
-    }
-  }
+html {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
 }
 
-body > footer {
-  max-width: $max-page-width;
-  margin: 0 auto;
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-  color: #40403e;
-  font-size: 14px;
+body {
+  background-color: #f9f9f6;
+  color: #33332f;
+  line-height: $module;
 
-  > section {
+  & > header {
+    display: flex;
+    justify-content: center;
+
     padding: 1.5 * $module;
 
+    a img {
+      height: 7 * $module;
+      width: 7 * $module;
+    }
+  }
+
+  & > main {
     display: flex;
     flex-wrap: wrap;
 
-  }
+    & > section {
+      flex: 1.618 0 30rem;
+    }
 
-  div {
-    flex: 300px;
+    & > aside {
+      flex: 1 0 30rem;
+    }
 
-    &:first-child p {
+    section {
 
+      background-color: rgba(#ffe, .5);
+
+      &.ucel {
+        background-color: rgba(#001, .01);
+      }
+
+      &.about {
+        background-color: rgba(#001, .05);
+      }
+
+      & > header {
+        display: inline-block;
+
+        padding: 0.5 * $module;
+
+        //background-color: rgba(#33332f, 0.7);
+        //color: #f6f6f2;
+        border-radius: 1px;
+        //font-weight: bold;
+
+        margin: $module;
+      }
+      div {
+        padding: 0 $module $module;
+      }
+
+      & > main {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > div {
+          flex: 1 0 300px;
+        }
+      }
     }
   }
 }
