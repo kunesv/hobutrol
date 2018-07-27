@@ -1,1 +1,8 @@
-
+body {
+  display: flex;
+  flex-direction: column;
+  
+  > main {
+    flex: 0 1 65rem;
+  }
+}
