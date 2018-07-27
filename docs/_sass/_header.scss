@@ -1,6 +1,15 @@
-main > header > img {
-  height: 5rem;
-  width: 5rem;
+main > header { 
+  align-items: center;
   
-  margin-left: -1rem;
+  > img {
+    height: 5rem;
+    width: 5rem;
+  
+    margin-left: -1rem;
+  }
+  
+  > h1 {
+    font-size: inherit;
+    line-height: 1.3rem;
+  }
 }
