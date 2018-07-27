@@ -6,6 +6,7 @@ body {
   justify-content: center;
   
   > main {
+    flex-direction: column;
     flex: 0 1 65rem;
   }
 }
