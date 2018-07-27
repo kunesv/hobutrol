@@ -9,7 +9,8 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self';"/>
     <meta name="msapplication-tap-highlight" content="no"/>
     
-    <meta link="rel" href="{{ "/assets/css/main.css?v=" | append: site.github.build_revision | relative_url }}"/>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: site.github.build_revision | relative_url }}"/>
+    
   </head>
   <body>
      {{ content }}
