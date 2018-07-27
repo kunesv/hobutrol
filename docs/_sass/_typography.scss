@@ -10,6 +10,11 @@ body {
   line-height: 1.618rem;
 }
 
-section.smaller-text p {
-  font-size: .85rem;
+section.caption { 
+  > p {
+    font-size: .85rem;
+  }
+  h1 + p {
+    margin-bottom: 0.5rem;
+  }
 }
