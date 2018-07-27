@@ -1,5 +1,8 @@
-body {
+body, main, header, section {
   display: flex;
+}
+
+body {
   justify-content: center;
   
   > main {
