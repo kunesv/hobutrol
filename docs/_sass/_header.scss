@@ -2,6 +2,8 @@ main > header {
   align-items: center;
   
   > a {
+    display: flex;
+    
     color: inherit;
     text-decoration: inherit;
     
