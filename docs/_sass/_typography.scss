@@ -10,6 +10,14 @@ body {
   line-height: 1.618rem;
 }
 
+a {
+  transition: background-color 300ms;
+  
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
 section.caption { 
   > p {
     font-size: .85rem;
