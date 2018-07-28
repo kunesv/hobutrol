@@ -1,16 +1,21 @@
 main > header { 
   align-items: center;
   
-  > img {
-    height: 5rem;
-    width: 5rem;
+  > a {
+    color: inherit;
+    text-decoration: inherit;
+    
+    > img {
+      height: 5rem;
+      width: 5rem;
   
-    margin-left: -1rem;
-  }
+      margin-left: -1rem;
+    }
   
-  > h1 {
-    font-size: inherit;
-    line-height: 1.3rem;
+    > h1 {
+      font-size: inherit;
+      line-height: 1.3rem;
+    }
   }
 }
 
