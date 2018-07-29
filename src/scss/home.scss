@@ -10,20 +10,41 @@ html, body {
   padding: 0;
 }
 
+a {
+  color: #9FC7D1;
+}
+
 body {
-  background-color: #f9f9f6;
-  color: #33332f;
+  background-color: #F4EFE8; // #EFCA7C;
+  color: #3C4A53;
   line-height: $module;
 
   & > header {
     display: flex;
     justify-content: center;
 
-    padding: 1.5 * $module;
+    padding: 1.5 * $module 0;
 
-    a img {
-      height: 7 * $module;
-      width: 7 * $module;
+    div, a {
+      display: flex;
+    }
+
+    div {
+      flex: 1 1 $module;
+
+      background-image: url("/images/hobutrol-logo-bg.png");
+      background-repeat: repeat-x;
+      background-size: auto 8 * $module;
+    }
+
+    a {
+      flex: 0 0 16 * $module;
+
+      img {
+        height: 8 * $module;
+        width: 16 * $module;
+      }
+
     }
   }
 
@@ -31,40 +52,47 @@ body {
     display: flex;
     flex-wrap: wrap;
 
+    justify-content: center;
+
+    //flex-direction: column;
+
     & > section {
-      flex: 1.618 0 30rem;
-    }
 
-    & > aside {
-      flex: 1 0 30rem;
-    }
+      margin: 0.2 * $module;
+      flex: 0 1 16.18 * $module;
 
-    section {
+      //&.zapisy {
+      //  background-image: url("/images/zapisy.png");
+      //}
+      //
+      //&.ucel {
+      //  background-image: url("/images/ucel_spolku.png");
+      //
+      //}
+      //
+      //&.about {
+      //  background-image: url("/images/about.png");
+      //}
 
-      background-color: rgba(#ffe, .5);
+      & > div {
+        box-shadow: 1px 1px 4px 1px #bf9236;
 
-      &.ucel {
-        background-color: rgba(#001, .01);
-      }
+        border-radius: 2px;
 
-      &.about {
-        background-color: rgba(#001, .05);
-      }
+        background: white no-repeat;
+        padding: $module;
 
-      & > header {
-        display: inline-block;
+        font-size: 0.9rem;
 
-        padding: 0.5 * $module;
+        & > div {
+          background-color: #C0C188;
+          padding: $module;
 
-        //background-color: rgba(#33332f, 0.7);
-        //color: #f6f6f2;
-        border-radius: 1px;
-        //font-weight: bold;
+          border-radius: 2px;
+          box-shadow: inset 0 0 0 4px rgba(#fff, .5);
 
-        margin: $module;
-      }
-      div {
-        padding: 0 $module $module;
+          color: rgba(#000, .9);
+        }
       }
 
       & > main {
@@ -76,5 +104,6 @@ body {
         }
       }
     }
+
   }
 }

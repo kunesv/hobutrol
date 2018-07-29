@@ -11,59 +11,54 @@
 </head>
 <body>
 <header>
+    <div></div>
     <a href="/"><img src="/images/hobutrol-logo.png "/></a>
+    <div></div>
 </header>
 <main>
-    <aside>
-        <section class="ucel">
-            <header>Účel spolku</header>
-            <div>
-                <ol>
-                    <li>Všeobecné zušlechťování veřejného prostoru na území hl. m. Prahy.</li>
-                    <li>Pořádání kulturních a společenských akcí na území hl. m. Prahy.</li>
-                    <li>Podpůrné politické aktivity k naplnění účelů v odst. 1. a 2.</li>
-                </ol>
-                <p>
-                    <a class="button" href="/docs/stanovy.pdf">Stanovy</a>
-                </p>
-            </div>
-        </section>
-        <section class="about">
-            <header>O spolku</header>
+
+    <section class="about">
+        <div>
             <div>
                 <p>Okrašlovací spolek v Holešovicích-Bubnech usiluje o zlepšení prostředí kolem nás.</p>
-                <p>Na počátku stála sdílená nepohoda z přístupu některých chovatelů psů k provozování jejich koníčka. Špína v ulicích se nám zdála již více nesnesitelnou.</p>
-                <p>Dosud jsme byli pasivní jako vy ostatní – ale něco se v nás zlomilo a řekli jsme si, že s tím něco uděláme společně.</p>
-                <p>Na nosnou základní linii spolkového života se brzy nabalilo mnoho dalších aktivit, třeba tradiční jarní závod Otvírání studánek, komunitní schůzování či podpora dalších prospěšných místních aktivit.</p>
+                <p>Na počátku stála sdílená nepohoda z přístupu některých chovatelů psů k provozování jejich koníčka.
+                    Špína v ulicích se nám zdála již více nesnesitelnou.</p>
+                <p>Dosud jsme byli pasivní jako vy ostatní – ale něco se v nás zlomilo a řekli jsme si, že s tím něco
+                    uděláme společně.</p>
+                <p>Na nosnou základní linii spolkového života se brzy nabalilo mnoho dalších aktivit, třeba tradiční
+                    jarní závod Otvírání studánek, komunitní schůzování či podpora dalších prospěšných místních
+                    aktivit.</p>
             </div>
-        </section>
-    </aside>
-    <section>
-        <header>Zápisy</header>
-        <main>
-            <div>
-                <ul>
-                    {{#each meetingRecords}}
-                    <li>
-                        <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
-                    </li>
-                    {{/each}}
-                </ul>
-            </div>
-            <div>
-                <h3>
-                    <img src="/images/spravni_rada.svg"/>
-                </h3>
-                <ul>
-                    {{#each boardRecords}}
-                    <li>
-                        <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
-                    </li>
-                    {{/each}}
-                </ul>
-            </div>
-        </main>
+        </div>
     </section>
+
+    <section class="zapisy">
+
+        <div>
+            <ul>
+                {{#each meetingRecords}}
+                <li>
+                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h3>
+                <img src="/images/spravni_rada.svg"/>
+            </h3>
+            <ul>
+                {{#each boardRecords}}
+                <li>
+                    <a href="{{path}}"><span class="date">{{date}}</span> <span class="title">{{shortTitle}}</span></a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+
 </main>
 <footer>
     <section>
