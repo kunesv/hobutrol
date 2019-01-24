@@ -22,9 +22,10 @@ main > header {
 }
 
 main > section > h1 {
-  margin: 4.854rem 0 1.618rem;
+  margin: 3.236rem 0 1.618rem;
 
   @media (min-width: 800px) {
+    margin-top: 4.854rem;
     margin-bottom: 0.809rem;
   }
 }
