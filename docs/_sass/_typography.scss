@@ -5,24 +5,30 @@ html, body {
 body {
   background: white;
   color: black;
-  
+
   font-family: Arial, sans-serif;
   line-height: 1.618rem;
 }
 
 a {
   transition: background-color 300ms;
-  
+
   &:hover {
     background-color: #6cf;
   }
 }
 
-section.caption { 
+section.caption {
   > p {
     font-size: .85rem;
   }
   h1 + p {
     margin-bottom: 1.618rem;
+
+    @media (min-width: 800px) {
+      margin-bottom: 0.809rem;
+    }
   }
 }
+
+
