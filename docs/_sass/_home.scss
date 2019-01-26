@@ -1,0 +1,29 @@
+section.caption {
+  > p {
+    font-size: .85rem;
+  }
+  h1 + p {
+    margin-bottom: 1.618rem;
+
+    @media (min-width: 800px) {
+      margin-bottom: 0.809rem;
+    }
+  }
+}
+
+section.stanovy {
+  > p {
+    font-size: .8rem;
+    margin: $module 0;
+
+    > a {
+      //display: inline-block;
+      background-image: url("../images/pdf.svg");
+      background-repeat: no-repeat;
+      background-position: -$module-half center;
+      background-size: auto 100%;
+      padding: $module $module $module 2 * $module;
+      align-items: center;
+    }
+  }
+}

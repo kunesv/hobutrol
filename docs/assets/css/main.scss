@@ -1,8 +1,17 @@
 ---
 ---
 
+$module: 1.618rem;
+$module-half: .5 * $module;
+
 @import "typography";
 
 @import "layout";
 @import "header";
 @import "footer";
+
+@import "home";
+
+a {
+  color: inherit;
+}

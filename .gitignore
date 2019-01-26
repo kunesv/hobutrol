@@ -2,3 +2,5 @@
 *.iml
 build
 node_modules
+docs/_site
+docs/.sass-cache
