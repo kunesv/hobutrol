@@ -11,12 +11,27 @@ body {
 }
 
 a {
-  transition: background-color 300ms;
 
-  &:hover {
-    background-color: #6cf;
+  color: #099;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #0cc;
+
+  display: inline-block;
+  line-height: 1rem;
+  padding-bottom: .2rem;
+
+
+
+  &.button {
+    border-bottom: 0 none;
+    padding-bottom: 0;
+
+    color: inherit;
   }
 }
+
 
 
 
