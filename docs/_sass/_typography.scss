@@ -4,7 +4,7 @@ html, body {
 
 body {
   background: white;
-  color: black;
+  color: #222;
 
   font-family: Arial, sans-serif;
   line-height: 1.618rem;
@@ -21,6 +21,12 @@ a {
   display: inline-block;
   line-height: 1rem;
   padding-bottom: .2rem;
+
+  transition: border-bottom 300ms;
+
+  &:hover {
+    border-bottom-color: inherit;
+  }
 
 
 
