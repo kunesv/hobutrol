@@ -13,17 +13,28 @@ section.caption {
 
 section.stanovy {
   > p {
-    font-size: .8rem;
+    font-size: .9rem;
     margin: $module 0;
 
     > a {
       //display: inline-block;
-      background-image: url("../images/pdf.svg");
+      background-image: url("../images/stanovy.svg");
       background-repeat: no-repeat;
-      background-position: -$module-half center;
-      background-size: auto 100%;
-      padding: $module $module $module 2 * $module;
+      background-position: $module-quarter center;
+      background-size: auto 70%;
+      padding: 3 * $module-quarter 3 * $module-quarter 3 * $module-quarter 2.5 * $module;
       align-items: center;
+
+      height: $module;
+      line-height: $module;
+
+      border: 1px solid #0cc;
+
+      color: #009999;
+
+      &:hover {
+        border-color: inherit;
+      }
     }
   }
 }
