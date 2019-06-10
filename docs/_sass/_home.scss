@@ -11,9 +11,8 @@ section.caption {
   }
 }
 
-section.stanovy {
-  > p {
-    font-size: .9rem;
+section {
+  > p.stanovy {
     margin: $module 0;
   }
 }
