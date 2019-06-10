@@ -3,10 +3,10 @@ section.caption {
     font-size: .85rem;
   }
   h1 + p {
-    margin-bottom: 1.618rem;
+    //margin-bottom: 1.618rem;
 
     @media (min-width: 800px) {
-      margin-bottom: 0.809rem;
+      //margin-bottom: 0.809rem;
     }
   }
 }

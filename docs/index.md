@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# Pohovnění 2019
-Se letos koná 15. června, od 14 hodin. Maso na grilování si prosíme přineste vlastní. Spolkové klobásy budou k dispozici.
+# Pohovění 2019
+Pohovnění se letos koná 15.&nbsp;června, od&nbsp;14&nbsp;hodin. Maso na&nbsp;grilování si prosíme přineste vlastní.  Spolkové klobásy budou k&nbsp;dispozici.  
 
 [Mapa běžecké trasy (5 km)](assets/mapa2019.png)
