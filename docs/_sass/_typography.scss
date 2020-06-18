@@ -10,20 +10,20 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.618rem;
 }
-
 a {
+  color: #0099ff;
+  text-decoration: underline;
 
-  color: #099;
+}
+.stanovy a {
+  display: flex;
 
-  text-decoration: none;
+  border: 2px solid #0099ff;
 
-  border-bottom: 1px solid #0cc;
+  padding: 0.809rem;
+  line-height: 100%;
 
-  display: inline-block;
-  line-height: 1rem;
-  padding-bottom: $module-quarter;
-
-  transition: border-bottom 300ms;
+  transition: border 300ms;
 
   &:hover {
     border-bottom-color: inherit;

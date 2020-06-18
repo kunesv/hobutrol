@@ -3,21 +3,32 @@ html, body, p {
   padding: 0;
 }
 
-body, main, header, section {
+body, main, header, section, div, article, footer {
   display: flex;
 }
 
 body {
   justify-content: center;
+  flex-direction: column;
+
+  align-items: center;
   
   > main {
     flex-direction: column;
-    flex: 0 1 56.63rem;
-    
-    padding: 0 1.618rem;
-    
+    max-width: 72.81rem;
+    width: 100%;
+
+    align-items: center;
+
     > section {
       flex-direction: column;
+      width: 100%;
+
+      > h1 {
+        align-self: center;
+        max-width: 56.63rem;
+        width: 100%;
+      }
     }
   }
 }

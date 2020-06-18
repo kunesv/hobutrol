@@ -1,5 +1,16 @@
-footer {
-  margin: 6.472rem 0 1.618rem;
+body > footer {
+  background-color: #222;
+  color: #eee;
+  width: 100%;
+  padding: 1.618rem 0;
+  justify-content: center;
+
+  & > div {
+    flex: 0 1 calc(35 * 1.618rem);
+    flex-direction: column;
+  }
+
+  margin: calc(5 * 1.618rem) 0 0;
   font-size: .8rem;
   border-top: 1px solid;
 }

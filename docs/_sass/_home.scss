@@ -1,6 +1,8 @@
 section.caption {
+  max-width: calc(35 * 1.618rem);
+  width: 100%;
   > p {
-    font-size: .85rem;
+    //font-size: .95rem;
   }
   h1 + p {
     margin-bottom: 1.618rem;
@@ -13,6 +15,55 @@ section.caption {
 
 section {
   > p.stanovy {
-    margin: $module 0;
+    display: flex;
+    margin: 1.628rem 0;
+  }
+}
+
+.events-list {
+  article {
+    flex: 0 1 calc(30 * 1.618rem);
+
+    & > div {
+      flex-direction: column;
+    }
+    .date {
+      flex: 0 0 calc(4 * 1.618rem);
+      align-items: center;
+      background-color: #ffd900;
+      padding: 0.809rem 0;
+
+      .day {
+        font-size: calc(2 * 1.618rem);
+        line-height: 100%;
+        font-weight: 700;
+      }
+      .month, .time {
+        font-size: 85%;
+        line-height: 150%;
+      }
+      .time {
+        font-weight: 700;
+      }
+    }
+    .description {
+      padding: 0.809rem 1.618rem;
+
+      h1 {
+        margin: 0 0 0.809rem;
+        font-size: 200%;
+        line-height: 100%;
+      }
+
+      h2 {
+        margin: 0.809rem 0;
+        font-size: 150%;
+        line-height: 100%;
+      }
+
+      ul {
+        margin-top: 0;
+      }
+    }
   }
 }

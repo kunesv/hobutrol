@@ -2,5 +2,10 @@
 layout: home
 ---
 
-# Zavírání studánek, 2019
-Studánky budeme letos zavírat 22.&nbsp;Listopadu, od&nbsp;19.00. Přijďte&nbsp;včas!
+# Pohovnění, 2020
+Letošní Pohovnění se bude konat 27. června, od 15 hodin. Jako obvykle na grilovacím místě ve Stromovce u mostu na Císařský ostrov.
+
+### Program
+* Běh na 5 km
+* Závody a soutěže pro děti
+* Zajímavý (ne)kulturní program

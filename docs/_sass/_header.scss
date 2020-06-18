@@ -1,31 +1,23 @@
-main > header { 
-  
-  > a {
+body > header {
+  width: 100%;
+  padding: 1.618rem 0;
+  justify-content: center;
+
+  .logo-container {
+    flex: 0 1 72.81rem;
+  }
+
+  img {
+    height: 4.05rem;
+    width: 4.05rem;
     display: flex;
-    align-items: center;
-    
-    color: inherit;
-    text-decoration: inherit;
-    
-    > img {
-      height: 4.854rem;
-      width: 4.854rem;
-  
-      margin-left: -0.809rem;
-    }
-  
-    > h1 {
-      font-size: inherit;
-      line-height: 1.3rem;
-    }
   }
 }
 
 main > section > h1 {
-  margin: 3.236rem 0 1.618rem;
+  font-size: 250%;
+  line-height: 125%;
+  font-weight: 700;
 
-  @media (min-width: 800px) {
-    margin-top: 4.854rem;
-    margin-bottom: 0.809rem;
-  }
+  margin: 3.236rem 0 1.618rem;
 }
