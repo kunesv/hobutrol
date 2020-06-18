@@ -33,26 +33,36 @@
               <h1>Akce spolku</h1>
 
               <div class="events-list">
+                  {% for event in site.data.events %}
+
                   <article>
                       <div class="date">
-                          <span class="day">27</span>
-                          <span class="month">Června</span>
-                          <span class="time">15:00</span>
+                          <span class="day">{{ event.day }}</span>
+                          <span class="month">{{ event.month }}</span>
+                          <span class="time">{{ event.time }}</span>
                       </div>
                       <div class="description">
-                          <h1>Pohovnění 2020</h1>
-                          <p>Letošní Pohovnění se bude konat 27. června, od 15 hodin. Jako obvykle na grilovacím místě ve Stromovce u mostu na Císařský ostrov.</p>
+                          <h1>{{ event.title }}</h1>
+                          <p>{{ event.description }}</p>
+
+                          {% if event.agenda %}
                           <h2>Program</h2>
                           <ul>
-                              <li>Běh na 5 km</li>
-                              <li>Závody a soutěže pro děti</li>
-                              <li>Zajímavý (ne)kulturní program</li>
+                              {% for item in event.agenda %}
+                              <li>{{ item.item }}</li>
+                              {% endfor %}
                           </ul>
+                          {% endif %}
                       </div>
+                      {% if event.image %}
                       <div>
-                          <img style="height: 100%" src="{{ "/assets/images/screenshot_pozvanka.png" | relative_url }}">
+                          <img style="height: 100%" src="{{ '/assets/images/' | relative_url }}{{event.image}}">
                       </div>
+                      {% endif %}
                   </article>
+
+                  {% endfor %}
+
               </div>
           </section>
       </main>
@@ -62,6 +72,7 @@
               <header>
                   Okrašlovací spolek v&nbsp;Holešovicích–Bubnech
               </header>
+              <hr/>
               <p>Email: <a href="mailto:spravni-rada@oshb.cz">spravni-rada@oshb.cz</a></p>
               <p>
                   Schnirchova&nbsp;1084/29<br>
