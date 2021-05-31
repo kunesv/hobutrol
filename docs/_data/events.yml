@@ -1,10 +1,13 @@
-- day: 27
-  month: červen 2020
+- day: 26
+  month: červen 2021
   time: "od 15.00"
-  title: Pohovnění 2020
-  description: Letošní Pohovnění se bude konat 27. června, od 15 hodin. Jako obvykle na grilovacím místě ve Stromovce u mostu na Císařský ostrov.
+  title: Pohovnění 2021
+  description: Letošní Pohovnění se bude konat 26. června, od 15 hodin. Jako obvykle na grilovacím místě ve Stromovce u mostu na Císařský ostrov.
   agenda:
-  - item: Běh na 5 km
-  - item: Závody a soutěže pro děti
-  - item: Zajímavý (ne)kulturní program
-  image: screenshot_pozvanka.png
+  - item: běh na 5 km,
+  - item: soutěže pro děti,
+  - item: gastronomický program,
+  - item: hudební produkce,
+  - item: ochutnávka lahvových piv,
+  - item: a další taškařice.
+  image: pd43-0604-347-jj.jpg
